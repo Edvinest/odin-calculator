@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#app {
+    background-color: lightgray;
+    margin: 10vh auto;
+    width: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 5px 5px 5px gray;
+}
+
+#display {
+    background-color: white;
+    width: 100%;
+    font-size: 1.35em;
+
+    text-align: right;
+    overflow-x: scroll;
+    border: 1px solid gray
+}
+
+#buttons {
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#buttons button {
+    border: 1px solid gray;
+    font-size: 1.25em;
+}
+
+#buttons button:last-child {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 992px) {
+    #app{
+        width: 25%;
+    }
+}
